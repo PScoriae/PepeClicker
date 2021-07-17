@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.LoginScreenController">
+   <children>
+      <BorderPane layoutX="100.0" layoutY="56.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Pepe Clicker!" BorderPane.alignment="BOTTOM_CENTER">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </Text>
+         </top>
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="/img/pepestare.png" />
+               </image>
+            </ImageView>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="172.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="unameInput" layoutX="224.0" layoutY="9.0" prefHeight="26.0" prefWidth="151.0" promptText="Enter Username..." AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                  <PasswordField fx:id="pwInput" layoutX="224.0" layoutY="43.0" promptText="Enter Password..." AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                  <Button layoutX="273.0" layoutY="73.0" mnemonicParsing="false" onAction="#attemptLogin" text="Login" AnchorPane.leftAnchor="273.0" AnchorPane.rightAnchor="273.0" />
+                  <Button layoutX="251.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="26.0" prefWidth="99.0" text="Register" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" />
+                  <Label fx:id="loginMesg" alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="104.0" prefHeight="16.0" prefWidth="383.0" textFill="RED" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0" />
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
