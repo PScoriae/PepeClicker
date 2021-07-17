@@ -1,12 +1,12 @@
 package ch.makery.address
 import ch.makery.address.model.{Collectibles, User}
 import scalafx.application.JFXApp
-import scalafx.application.JFXApp.PrimaryStage
 import scalafx.scene.Scene
 import scalafx.Includes._
 import scalafxml.core.{FXMLLoader, NoDependencyResolver}
 import scalafx.scene.image.Image
 import javafx.{scene => jfxs}
+
 import java.io.IOException
 import java.util.{Timer, TimerTask}
 
@@ -16,12 +16,12 @@ object MainApp extends JFXApp {
   // initialize the loader object.
   val loader = new FXMLLoader(null, NoDependencyResolver)
   // Load root layout from fxml file.
-  loader.load(rootResource);
+  loader.load(rootResource)
   // retrieve the root component BorderPane from the FXML
   val roots = loader.getRoot[jfxs.layout.BorderPane]
 
   // initialize stage
-  stage = new PrimaryStage {
+  stage = new JFXApp.PrimaryStage {
     title = "Pepe The Frog"
     scene = new Scene {
       root = roots
@@ -81,7 +81,7 @@ object MainApp extends JFXApp {
   def showScene(location: String) = {
     val resource = getClass.getResourceAsStream(location)
     val loader = new FXMLLoader(null, NoDependencyResolver)
-    loader.load(resource);
+    loader.load(resource)
     val roots = loader.getRoot[jfxs.layout.AnchorPane]
     MainApp.roots.setCenter(roots)
   }
