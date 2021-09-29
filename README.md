@@ -2,7 +2,7 @@
 ## Introduction
 _Adapted from the included [report](https://github.com/PScoriae/PepeClicker/blob/master/pepeclicker_report.pdf)_.
 
-Students of PRG2104 in the April 2021 semester at Sunway University were tasked with a final project to demonstrate their **inheritance** and **polymorphism** programming knowledge. This was to be done in the Scala language with the use of the ScalaFX graphical user interface (GUI) library to create a GUI application.
+Students of Object-oriented Programming PRG2104 in the April 2021 semester at Sunway University were tasked with a final project to demonstrate their **inheritance** and **polymorphism** programming knowledge. This was to be done in the Scala language with the use of the ScalaFX graphical user interface (GUI) library to create a GUI application.
 Suggested standalone systems were:
 - (Scientific) calculator
 - Library Management System
