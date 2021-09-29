@@ -21,4 +21,4 @@ Of course, since this is an Object-oriented programming (OOP) class, students sh
 The proposed system for this project is based on the popular cookie clicker game but with styling in the form of the popular Internet meme “Pepe the Frog”. In a cookie clicker game, players simply click on a cookie on the screen and gain a cookie each time it is clicked. Accumulated cookies can then be used as currency to buy power-ups. Power-ups can change gameplay in various ways, but the classic power-ups typically increase the amount of cookies earned per click and grant cookies passively. Since the system takes styling from Pepe the Frog, various elements were changed to fit the meme and will later be discussed.
 
 # Further Reading
-For further reading and a more in depth write-up on this project, please download and view the included [report](https://github.com/PScoriae/PepeClicker/blob/master/pepeclicker_report.pdf).
+For further reading and a more in-depth write-up on this project, please download and view the included [report](https://github.com/PScoriae/PepeClicker/blob/master/pepeclicker_report.pdf).
